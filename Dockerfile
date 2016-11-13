@@ -17,7 +17,8 @@ WORKDIR /app
 RUN bundle install
 
 # EXPOSE 句はコンテナ内のどのポートを利用するか記述する
-EXPOSE 8080
+EXPOSE 80
+ENV PORT 80
 
 # CMD 句はコンテナのデフォルト起動コマンドを記述する
 CMD ["script/server"]
